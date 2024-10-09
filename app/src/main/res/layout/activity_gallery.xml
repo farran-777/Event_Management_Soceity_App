@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/gallery"
+    android:background="@drawable/emsbg"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="EMS  GALLERY"
+        android:textColor="#021789"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/kaushanscript_regular"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Data Recovery"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/merienda_extrabold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/datarecovery"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/datarecovery2"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+/>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/datarecovery3"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Farewell"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/merienda_extrabold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/farewell3"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+/>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/farewell"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+/>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/farewell2"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Crime"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/merienda_extrabold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/crime"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+/>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/crime2"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/crime3"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+</ScrollView>

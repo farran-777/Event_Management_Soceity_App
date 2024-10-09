@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/upcoming_events"
+    android:background="@drawable/emsbg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Upcoming Events"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/kaushanscript_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Upcoming"
+            android:textColor="#162EA4"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/kaushanscript_regular"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/poster1"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Recent"
+            android:textColor="#162EA4"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/kaushanscript_regular"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</ScrollView>
