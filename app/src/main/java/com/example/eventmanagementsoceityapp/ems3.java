@@ -3,11 +3,13 @@ package com.example.eventmanagementsoceityapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.Objects;
 
@@ -16,7 +18,6 @@ public class ems3 extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private CardView cardGallery, cardUpcomingEvents, cardDesignations, cardPoll;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +32,27 @@ public class ems3 extends AppCompatActivity {
         cardDesignations = findViewById(R.id.card_designations);
         cardPoll = findViewById(R.id.card_poll);
 
+        // Set up the drawer toggle
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
 
-        // Make the Navigation drawer icon always appear on the action bar
+        // Make the navigation drawer icon always appear on the action bar
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // Set click listeners for the card views
         setCardClickListeners();
+
+        // Set up the navigation view
+        setupNavigationView();
+    }
+
+    private void setupNavigationView() {
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(item -> {
+
+            drawerLayout.closeDrawers(); // Close the drawer after selection
+            return true;
+        });
     }
 
     private void setCardClickListeners() {
@@ -70,5 +84,4 @@ public class ems3 extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }
